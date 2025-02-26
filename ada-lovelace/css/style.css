@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+max-width: 300vw;
+}
+
+   .container > * {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 300vh; 
+}
+
+.ada-lovelace-twemoji-image-container {
+    position: relative;
+    bottom: 7vw;
+    float: right;
+}
+
+.ada-lovelace-twemoji {
+    display: block;
+    width: 100%;
+}
+
+.slides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    max-height: 300vh;
+    gap: 70px 100px;
+    color: #ffffff;
+    overflow: auto;
+}
+
+.slide-one {
+    background-color: #825FE9;
+    height: 100vh;
+}
+
+/* height: auto; >>> To make a div's height adapt to its content using CSS, use `height: auto;` or skip setting a fixed height. This ensures the div adjusts dynamically to different content sizes, promoting a flexible layout.Jan 24, 2024 */
+
+.slide-two {
+    height: auto;
+    background-color: #101010;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/* .slide-three {
+    height: auto;
+    background-color: #74ade2;
+    padding-top: 100px;
+    padding-bottom: 50px;
+} */
+
+.header-one-title {
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    text-transform: uppercase; 
+    text-align: center;
+}
+
+.header-two-subtitle {
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.slide-two .black-hole-timeline-header {
+    /* font-size: clamp(1rem, 2.5vw, 2rem);  */
+    position: absolute;
+    padding: 25px 25px 25px 25px;
+    transform: translate(65%, -111%);
+}
+
+ /*** LET'S FLEXBOX ****/
+
+ .black-hole-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 25px;
+ }
+
+.black-hole-year-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-color: #000000;
+    border-radius: 100%;
+    border: 0.5rem solid #ffffff;
+}
+
+.black-hole-year-title {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+}
+
+.black-hole-paragraph-container {
+    width: 325px;
+    min-width: 325px;
+    max-width: 325px;
+    height: 100%;
+    min-height: 175px;
+    max-height: 175px;
+    background-color: #000000af;
+    margin: 25px 0px 0px 0px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.black-hole-box-paragraph {
+    font-size: 1rem;
+    color: #ffffff;
+    max-width: 200%;
+    margin: 10px 10px 10px 10px;
+    padding: 25px;
+}
+
+ /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+ @media screen and (min-width: 601px) {
+  .slides .text-one  {
+    font-size: 2.5rem;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .slides .text-one {
+    font-size: 1.25rem;
+    margin: 25px 25px 25px 25px;
+  }
+}
+
+ /* If the screen size is 601px wide or more, set the font-size of <div> to 2.5rem */
+@media screen and (min-width: 601px) {
+  .slides .sub-text-one  {
+    font-size: 2.5rem;
+    bottom: 35%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    margin: 25px 25px 25px 25px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 1.25rem */
+@media screen and (max-width: 600px) {
+  .slides .sub-text-one {
+    font-size: 1.25rem;
+    bottom: 44%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    margin: 25px 25px 25px 25px;
+  }
+}
+
+  @media only screen and (max-width: 600px) {
+
+    .slides .black-hole-timeline-header { 
+     font-size: 1.7em; 
+     right: 53%;
+     transform: translate(57%, -111%);
+  }
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .slides .black-hole-timeline-header { 
+   font-size: 1.7em; 
+   right: 53%;
+   transform: translate(60%, -111%);
+}
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .slides .black-hole-timeline-header { 
+   font-size: 1.7em; 
+   right: 54%;
+   text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+}
+
+/* height: auto; >>> To make a div's height adapt to its content using CSS, use `height: auto;` or skip setting a fixed height. This ensures the div adjusts dynamically to different content sizes, promoting a flexible layout.Jan 24, 2024 */
+
+/*** 3RD SLIDE ***/
+
+.slide-three {
+  height: auto;
+  background-color: #101010;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.slide-three .timeless-facts-header {
+  /* font-size: clamp(1rem, 2.5vw, 2rem);  */
+  position: absolute;
+  padding: 25px 25px 25px 25px;
+  transform: translate(65%, -111%);
+}
+
+.slides .timeless-facts-header {
+  font-size: 2em;
+  right: 53%;
+  text-align: center;
+}
+
+/*** LET'S FLEXBOX ****/
+
+.timeless-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.timeless-year-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  background-color: #000000;
+  border-radius: 100%;
+  border: 0.5rem solid #ffffff;
+}
+
+.timeless-year-title {
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+}
+
+.timeless-paragraph-container {
+  width: 325px;
+  min-width: 325px;
+  max-width: 325px;
+  height: 100%;
+  min-height: 175px;
+  max-height: 175px;
+  background-color: #000000af;
+  margin: 25px 0px 0px 0px;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.timeless-paragraph {
+  font-size: 1rem;
+  color: #ffffff;
+  max-width: 200%;
+  margin: 10px 10px 10px 10px;
+  padding: 25px;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .slides .black-hole-timeline-header  {
+    /* font-size: 2.5rem; */
+    text-wrap: nowrap;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .slides .text-one {
+    font-size: 1.25rem;
+    margin: 25px 25px 25px 25px;
+  }
+}
+
+ /* If the screen size is 601px wide or more, set the font-size of <div> to 2.5rem */
+@media screen and (min-width: 601px) {
+  .slides .sub-text-one  {
+    font-size: 2.5rem;
+    bottom: 35%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    margin: 25px 25px 25px 25px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 1.25rem */
+@media screen and (max-width: 600px) {
+  .slides .sub-text-one {
+    font-size: 1.25rem;
+    bottom: 44%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    margin: 25px 25px 25px 25px;
+  }
+}
+
+  @media only screen and (max-width: 600px) {
+
+    .slides .timeless-facts-header { 
+     font-size: 1.7em; 
+     right: 53%;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  .slides .timeless-facts-header { 
+   font-size: 1.7em; 
+   right: 57%;
+   text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+}
+
+/*** 4TH SLIDE ***/
+
+.slide-four {
+  background-color: #825FE9;
+  /* height: auto; */
+  /* padding-top: 100px;
+  padding-bottom: 50px; */
+}
+
+.slide-four-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ada-bot-button-class {
+  border: none;
+  margin: 20px;
+  padding: 25px;
+  width: 500px;
+  height: 100px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 0.5rem solid #ffffff;
+  cursor: pointer;
+}
+
+.bot-paragraph {
+  color: #ffffff;
+  font-size: 1em;
+}
+
